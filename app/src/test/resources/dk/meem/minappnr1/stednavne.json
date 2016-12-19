@@ -1,0 +1,634 @@
+{
+ "type": "FeatureCollection",
+ "crs": {
+          "type": "name",
+          "properties": {"name": "EPSG:25832"}
+        },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "gård",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0479",
+    "kommune_navn": "Svendborg",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0479",
+    "sogn_kode": "7722",
+    "sogn_navn": "Brudager",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7722",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejbygård",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    608098.19,
+    6110452.69,
+    608117.65,
+    6110466.1
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "gård",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0410",
+    "kommune_navn": "Middelfart",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0410",
+    "sogn_kode": "7835",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7835",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejbygård",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    559746.7,
+    6144365.63,
+    559769.96,
+    6144377.55
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "kraftvarmeværk",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0461",
+    "kommune_navn": "Odense",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0461",
+    "sogn_kode": "7780",
+    "sogn_navn": "Korsløkke",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7780",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Mølle Renseanlæg",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    589728.88,
+    6139952.31,
+    589772.54,
+    6139976.71
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "vandmølle",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0461",
+    "kommune_navn": "Odense",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0461",
+    "sogn_kode": "7779",
+    "sogn_navn": "Vor Frue",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7779",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Mølle",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    589613.89,
+    6139980.66,
+    589631.47,
+    6140020.24
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "bydel",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0461",
+    "kommune_navn": "Odense",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0461",
+    "sogn_kode": "7780",
+    "sogn_navn": "Korsløkke",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7780",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby",
+     "status": "suAutoriseret"
+    }]
+   },
+   "bbox": [
+    590068.92,
+    6138790.34,
+    591628.64,
+    6140049.33
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "folkeskole",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0410",
+    "kommune_navn": "Middelfart",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0410",
+    "sogn_kode": "7835",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7835",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Skole",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    559271.49,
+    6143501.01,
+    559395.62,
+    6143638.62
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "kraftvarmeværk",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0410",
+    "kommune_navn": "Middelfart",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0410",
+    "sogn_kode": "7835",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7835",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Fjernvarme A.m.b.a.",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    558894.16,
+    6142965.33,
+    558918.02,
+    6143000.87
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "kirkeProtestantisk",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0410",
+    "kommune_navn": "Middelfart",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0410",
+    "sogn_kode": "7835",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7835",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Kirke",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    559549.66,
+    6143786.37,
+    559577.56,
+    6143799.14
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "hal",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0410",
+    "kommune_navn": "Middelfart",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0410",
+    "sogn_kode": "7835",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7835",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Hallen",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    559188.41,
+    6143581.45,
+    559274.96,
+    6143678.11
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "spredtBebyggelse",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0410",
+    "kommune_navn": "Middelfart",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0410",
+    "sogn_kode": "7835",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7835",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejbykrog",
+     "status": "suAutoriseret"
+    }]
+   },
+   "bbox": [
+    558533.54,
+    6144667.65,
+    559247.49,
+    6145243.58
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "by",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0410",
+    "kommune_navn": "Middelfart",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0410",
+    "sogn_kode": "7832",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7832",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby",
+     "status": "suAutoriseret"
+    }]
+   },
+   "bbox": [
+    558186.14,
+    6141868.51,
+    560540.2,
+    6145540.25
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "moseSump",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0410",
+    "kommune_navn": "Middelfart",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0410",
+    "sogn_kode": "7832",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7832",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Mose",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    559877.67,
+    6142877.41,
+    560969.07,
+    6143836.68
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "kristen",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0410",
+    "kommune_navn": "Middelfart",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0410",
+    "sogn_kode": "7835",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7835",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Kirkegård",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    559542.3,
+    6143758.25,
+    559591.09,
+    6143813.9
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "vandløb",
+    "region_kode": "1085",
+    "region_navn": "Region Sjælland",
+    "kommune_kode": "0350",
+    "kommune_navn": "Lejre",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0350",
+    "sogn_kode": "7175",
+    "sogn_navn": "Kirke Såby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7175",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Å",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    678467.55,
+    6171956.02,
+    681874.79,
+    6176941.81
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "stadion",
+    "region_kode": "1085",
+    "region_navn": "Region Sjælland",
+    "kommune_kode": "0259",
+    "kommune_navn": "Køge",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0259",
+    "sogn_kode": "7216",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7216",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Stadion",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    693370.737,
+    6153907.747,
+    693799.132,
+    6154117.208
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "folkeskole",
+    "region_kode": "1085",
+    "region_navn": "Region Sjælland",
+    "kommune_kode": "0259",
+    "kommune_navn": "Køge",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0259",
+    "sogn_kode": "7216",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7216",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Skole",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    693531.54,
+    6153817.84,
+    693787.48,
+    6153912.44
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "hal",
+    "region_kode": "1085",
+    "region_navn": "Region Sjælland",
+    "kommune_kode": "0259",
+    "kommune_navn": "Køge",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0259",
+    "sogn_kode": "7216",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7216",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejbyhallen",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    693531.54,
+    6153817.84,
+    693787.48,
+    6153912.44
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "spredtBebyggelse",
+    "region_kode": "1085",
+    "region_navn": "Region Sjælland",
+    "kommune_kode": "0259",
+    "kommune_navn": "Køge",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0259",
+    "sogn_kode": "7216",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7216",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Hestehave",
+     "status": "suAutoriseret"
+    }]
+   },
+   "bbox": [
+    692531.28,
+    6154876.99,
+    693744,
+    6156160.54
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "by",
+    "region_kode": "1085",
+    "region_navn": "Region Sjælland",
+    "kommune_kode": "0259",
+    "kommune_navn": "Køge",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0259",
+    "sogn_kode": "7216",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7216",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby",
+     "status": "suAutoriseret"
+    }]
+   },
+   "bbox": [
+    693046.53,
+    6152915.05,
+    695366,
+    6154367.07
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "moseSump",
+    "region_kode": "1085",
+    "region_navn": "Region Sjælland",
+    "kommune_kode": "0259",
+    "kommune_navn": "Køge",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0259",
+    "sogn_kode": "7216",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7216",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Sø",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    693076.6,
+    6152875.81,
+    693832.97,
+    6153507.88
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "skovPlantage",
+    "region_kode": "1085",
+    "region_navn": "Region Sjælland",
+    "kommune_kode": "0259",
+    "kommune_navn": "Køge",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0259",
+    "sogn_kode": "7216",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7216",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Skov",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    692440.33,
+    6153928.77,
+    693930.12,
+    6155059.34
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "tog",
+    "region_kode": "1083",
+    "region_navn": "Region Syddanmark",
+    "kommune_kode": "0410",
+    "kommune_navn": "Middelfart",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0410",
+    "sogn_kode": "7835",
+    "sogn_navn": "Ejby",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7835",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby Station",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    558863.238,
+    6142882.384,
+    558863.238,
+    6142882.384
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "gård",
+    "region_kode": "1084",
+    "region_navn": "Region Hovedstaden",
+    "kommune_kode": "0161",
+    "kommune_navn": "Glostrup",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0161",
+    "sogn_kode": "7147",
+    "sogn_navn": "Glostrup",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7147",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejbygård",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    714291.98,
+    6178185.77,
+    714310.35,
+    6178202.71
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "specialskole",
+    "region_kode": "1084",
+    "region_navn": "Region Hovedstaden",
+    "kommune_kode": "0161",
+    "kommune_navn": "Glostrup",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0161",
+    "sogn_kode": "7147",
+    "sogn_navn": "Glostrup",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7147",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejbyhus",
+     "status": "officielt"
+    }]
+   },
+   "bbox": [
+    714222.49,
+    6177676.23,
+    714247.13,
+    6177695.35
+   ]
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "kategori": "by",
+    "region_kode": "1084",
+    "region_navn": "Region Hovedstaden",
+    "kommune_kode": "0151",
+    "kommune_navn": "Ballerup",
+    "kommune_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=kommune&komkode=0151",
+    "sogn_kode": "7147",
+    "sogn_navn": "Glostrup",
+    "sogn_href": "http:\/\/kortforsyningen.kms.dk\/?servicename=RestGeokeys_v2&method=sogn&sognkode=7147",
+    "adresse_href": "http:\/\/dawa.aws.dk\/adresser\/null",
+    "stednavneliste": [{
+     "navn": "Ejby",
+     "status": "suAutoriseret"
+    }]
+   },
+   "bbox": [
+    713775.894,
+    6177141.32,
+    715501.214,
+    6178928.1
+   ]
+  }
+ ]
+}

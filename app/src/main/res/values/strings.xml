@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Stednavne</string>
+    <string name="searchfield1">Stednavn</string>
+    <string name="searchfield2">Kommunenummer</string>
+    <string name="buttontext">Søg</string>
+    <string name="connection_error">Der var netværksfejl.</string>
+</resources>
