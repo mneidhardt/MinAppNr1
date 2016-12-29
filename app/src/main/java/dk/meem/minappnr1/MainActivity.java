@@ -47,13 +47,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Handles the user's menu selection.
-    @Override
+    /*@Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.settings:
                 //Intent settingsFragment = new Intent(getBaseContext(), SettingsFragment.class);
                 //startActivity(settingsFragment);
                 getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }*/
+
+    // Handles the user's menu selection.
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.settings:
+                Intent settingsActivity = new Intent(getBaseContext(), SettingsActivity.class);
+                startActivity(settingsActivity);
+                //getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

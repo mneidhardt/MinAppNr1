@@ -99,7 +99,7 @@ public class DisplaySearchresult extends AppCompatActivity {
         String url = null;
         String summary = null;
         Calendar rightNow = Calendar.getInstance();
-        DateFormat formatter = new SimpleDateFormat("MMM dd H:mm");
+        DateFormat formatter = new SimpleDateFormat("dd. MMM H:mm");
 
         try {
             stream = downloadUrl(urlString);
@@ -114,7 +114,7 @@ public class DisplaySearchresult extends AppCompatActivity {
 
         StringBuilder htmlString = new StringBuilder();
         htmlString.append("<h3>Stednavne fra Kortforsyningen</h3>");
-        htmlString.append("<em>Hentede " + features.size() + " hits. " + formatter.format(rightNow.getTime()) + "</em>");
+        htmlString.append("<em>Hentede " + features.size() + " resultater. " + formatter.format(rightNow.getTime()) + "</em>");
         htmlString.append("<p/>" + "<table><tr><td><b>Stednavn</b></td><td><b>Kategori</b></td><td><b>Kommune</b></td></tr>");
         for (Feature feature : features) {
             htmlString.append("<tr>" +
