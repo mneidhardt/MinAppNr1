@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<EditTextPreference
+    android:key="stednavn_login"
+    android:title="@string/stednavn_login"
+    android:defaultValue="mine" />
+<EditTextPreference
+    android:key="stednavn_password"
+    android:title="@string/stednavn_password"
+    android:defaultValue="pwd" />
+</PreferenceScreen>

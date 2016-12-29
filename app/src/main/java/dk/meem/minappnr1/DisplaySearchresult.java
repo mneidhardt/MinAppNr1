@@ -6,9 +6,11 @@ import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
+import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.TextView;
@@ -25,6 +27,7 @@ import java.util.List;
 public class DisplaySearchresult extends AppCompatActivity {
     private static final String baseURL =
             "http://services.kortforsyningen.dk/?servicename=RestGeokeys_v2&method=stedv2";
+    private static final int maxhits = 10000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +37,15 @@ public class DisplaySearchresult extends AppCompatActivity {
         Intent intent = getIntent();
         String searchterm1 = intent.getStringExtra(MainActivity.STEDNAVN);
         String searchterm2 = intent.getStringExtra(MainActivity.KOMMUNENR);
+        String login = intent.getStringExtra(MainActivity.LOGIN);
+        String password = intent.getStringExtra(MainActivity.PASSWORD);
 
         if (haveNetwork()) {
             String URL = baseURL +
+                    "&hits="     + maxhits +
                     "&stednavn=" + searchterm1 +
-                    "&login=" + "" +
-                    "&password=" + "";
+                    "&login=" + login +
+                    "&password=" + password;
 
             new DownloadXmlTask().execute(URL);
         } else {
@@ -70,7 +76,7 @@ public class DisplaySearchresult extends AppCompatActivity {
             try {
                 return loadXmlFromNetwork(urls[0]);
             } catch (IOException e) {
-                return getResources().getString(R.string.connection_error);
+                return getResources().getString(R.string.connection_error) + " - " + e.getMessage();
             }
         }
 
@@ -120,26 +126,6 @@ public class DisplaySearchresult extends AppCompatActivity {
         }
         htmlString.append("</table>");
         return htmlString.toString();
-
-        // StackOverflowXmlParser returns a List (called "entries") of Entry objects.
-        // Each Entry object represents a single post in the XML feed.
-        // This section processes the entries list to combine each entry with HTML markup.
-        // Each entry is displayed in the UI as a link that optionally includes
-        // a text summary.
-        /*
-        int count=1;
-        for (Entry entry : entries) {
-            htmlString.append("<p>" + (count++) + ": <a href='");
-            htmlString.append(entry.link);
-            htmlString.append("'>" + entry.title + "</a></p>");
-            // If the user set the preference to include summary text,
-            // adds it to the display.
-            if (pref) {
-                htmlString.append(entry.summary);
-            }
-        }
-        return htmlString.toString();
-        */
     }
 
     // Given a string representation of a URL, sets up a connection and gets
@@ -156,7 +142,4 @@ public class DisplaySearchresult extends AppCompatActivity {
         InputStream stream = conn.getInputStream();
         return stream;
     }
-
-
-
 }

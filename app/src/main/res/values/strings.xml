@@ -4,4 +4,7 @@
     <string name="searchfield2">Kommunenummer</string>
     <string name="buttontext">Søg</string>
     <string name="connection_error">Der var netværksfejl.</string>
+    <string name="settings">Konfig</string>
+    <string name="stednavn_login">BrugerID</string>
+    <string name="stednavn_password">Password</string>
 </resources>
