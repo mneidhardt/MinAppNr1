@@ -15,10 +15,10 @@ android:orientation="vertical" >
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number"
+        android:inputType="text"
         android:text=""
         android:ems="10"
-        android:id="@+id/kommunenr"
+        android:id="@+id/kommunenavn"
         android:hint="@string/searchfield2" />
 
     <Button android:id="@+id/button"

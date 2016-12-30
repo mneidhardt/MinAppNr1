@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Stednavne</string>
     <string name="searchfield1">Stednavn</string>
-    <string name="searchfield2">Kommunenummer</string>
+    <string name="searchfield2">Kommunenavn</string>
     <string name="buttontext">Søg</string>
-    <string name="connection_error">Der var netværksfejl.</string>
+    <string name="connection_error">Der var netværksfejl. Check evt. login og password.</string>
     <string name="settings">Konfig</string>
     <string name="stednavn_login">BrugerID</string>
     <string name="stednavn_password">Password</string>

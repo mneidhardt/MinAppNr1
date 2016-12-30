@@ -28,6 +28,8 @@ public class DisplaySearchresult extends AppCompatActivity {
     private static final String baseURL =
             "http://services.kortforsyningen.dk/?servicename=RestGeokeys_v2&method=stedv2";
     private static final int maxhits = 10000;
+    private String stednavn = null;
+    private String kommunenavn = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,15 +37,15 @@ public class DisplaySearchresult extends AppCompatActivity {
         setContentView(R.layout.activity_display_searchresult);
 
         Intent intent = getIntent();
-        String searchterm1 = intent.getStringExtra(MainActivity.STEDNAVN);
-        String searchterm2 = intent.getStringExtra(MainActivity.KOMMUNENR);
+        this.stednavn = intent.getStringExtra(MainActivity.STEDNAVN);
+        this.kommunenavn = intent.getStringExtra(MainActivity.KOMMUNENAVN);
         String login = intent.getStringExtra(MainActivity.LOGIN);
         String password = intent.getStringExtra(MainActivity.PASSWORD);
 
         if (haveNetwork()) {
             String URL = baseURL +
                     "&hits="     + maxhits +
-                    "&stednavn=" + searchterm1 +
+                    "&stednavn=" + stednavn +
                     "&login=" + login +
                     "&password=" + password;
 
@@ -76,7 +78,7 @@ public class DisplaySearchresult extends AppCompatActivity {
             try {
                 return loadXmlFromNetwork(urls[0]);
             } catch (IOException e) {
-                return getResources().getString(R.string.connection_error) + " - " + e.getMessage();
+                return getResources().getString(R.string.connection_error);
             }
         }
 
@@ -103,7 +105,7 @@ public class DisplaySearchresult extends AppCompatActivity {
 
         try {
             stream = downloadUrl(urlString);
-            features = stjsonParser.readJsonStream(stream);
+            features = stjsonParser.readJsonStream(stream, this.kommunenavn);
             // Makes sure that the InputStream is closed after the app is
             // finished using it.
         } finally {

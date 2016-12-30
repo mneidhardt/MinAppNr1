@@ -3,10 +3,10 @@
 <EditTextPreference
     android:key="stednavn_login"
     android:title="@string/stednavn_login"
-    android:defaultValue="mine" />
+    android:defaultValue="" />
 <EditTextPreference
     android:key="stednavn_password"
     android:title="@string/stednavn_password"
-    android:defaultValue="pwd"
+    android:defaultValue=""
     android:inputType="textPassword" />
 </PreferenceScreen>

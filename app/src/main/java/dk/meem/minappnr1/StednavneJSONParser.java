@@ -19,9 +19,12 @@ import java.util.List;
  */
 
 public class StednavneJSONParser {
-    public List<Feature> readJsonStream(InputStream in) throws IOException {
+    private String kommunenavn;
+
+    public List<Feature> readJsonStream(InputStream in, String kommunenavn) throws IOException {
         JsonReader reader = new JsonReader(new InputStreamReader(in, "UTF-8"));
         List<Feature> messages = new ArrayList<Feature>();
+        this.kommunenavn = kommunenavn;
 
         try {
             reader.beginObject();
@@ -47,7 +50,11 @@ public class StednavneJSONParser {
         reader.beginArray();
 
         while (reader.hasNext()) {
-            messages.add(readFeature(reader));
+            Feature feature = readFeature(reader);
+            if (this.kommunenavn == null || this.kommunenavn.isEmpty() ||
+                    feature.getKommune_navn().trim().equalsIgnoreCase(kommunenavn.trim())) {
+                messages.add(feature);
+            }
         }
         reader.endArray();
         return messages;

@@ -14,7 +14,7 @@ import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
     public final static String STEDNAVN = "dk.meem.minappnr1.stednavn";
-    public final static String KOMMUNENR = "dk.meem.minappnr1.kommunenr";
+    public final static String KOMMUNENAVN = "dk.meem.minappnr1.kommunenavn";
     public final static String LOGIN = "dk.meem.minappnr1.stednavn_login";
     public final static String PASSWORD = "dk.meem.minappnr1.stednavn_password";
     private SharedPreferences sharedPref;
@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
     public void searchPlacename(View view) {
         Intent intent = new Intent(this, DisplaySearchresult.class);
         EditText editText1 = (EditText) findViewById(R.id.stednavn);
-        EditText editText2 = (EditText) findViewById(R.id.kommunenr);
+        EditText editText2 = (EditText) findViewById(R.id.kommunenavn);
         intent.putExtra(STEDNAVN, editText1.getText().toString());
-        intent.putExtra(KOMMUNENR, editText2.getText().toString());
+        intent.putExtra(KOMMUNENAVN, editText2.getText().toString());
         intent.putExtra(LOGIN, sharedPref.getString("stednavn_login", ""));
         intent.putExtra(PASSWORD, sharedPref.getString("stednavn_password", ""));
         startActivity(intent);
@@ -47,27 +47,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // Handles the user's menu selection.
-    /*@Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.settings:
-                //Intent settingsFragment = new Intent(getBaseContext(), SettingsFragment.class);
-                //startActivity(settingsFragment);
-                getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }*/
-
-    // Handles the user's menu selection.
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.settings:
                 Intent settingsActivity = new Intent(getBaseContext(), SettingsActivity.class);
                 startActivity(settingsActivity);
-                //getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
