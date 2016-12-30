@@ -1,6 +1,8 @@
 # MinAppNr1
 Simpel Android-app der henter danske stednavne fra Kortforsyningen.
+
 Se mere her: 
+
 http://sdfe.dk/hent-data/til-lands/danske-stednavne/
 
 Man kan taste en tekst, fx ejby, og få alle de forekomster af ordet der findes i Danske Stednavne-registret.
