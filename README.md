@@ -5,6 +5,7 @@ Se mere her:
 
 http://sdfe.dk/hent-data/til-lands/danske-stednavne/
 
-Man kan taste en tekst, fx ejby, og få alle de forekomster af ordet der findes i Danske Stednavne-registret.
-Man kan bruge '*' som wildcard, fx ejby*.
-Derudover kan man også angive et kommunenavn, og kun får de forekomster der ligger i den anguvne kommune.
+Appen har to søgefelter, et til stednavn og et til kommunenavn.
+I stednavne-feltet kan man benytte '*' som wildcard, det kan man ikke i kommunenavns-feltet.
+
+Hvis man også angiver et kommunenavn, får man kun de forekomster der ligger i den angivne kommune.
