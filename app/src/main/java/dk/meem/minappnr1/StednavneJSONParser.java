@@ -51,7 +51,10 @@ public class StednavneJSONParser {
 
         while (reader.hasNext()) {
             Feature feature = readFeature(reader);
-            if (this.kommunenavn == null || this.kommunenavn.isEmpty() ||
+            if (this.kommunenavn == null ||
+                    this.kommunenavn.isEmpty() ||
+                    feature.getKommune_navn() == null ||
+                    feature.getKommune_navn().isEmpty() ||
                     feature.getKommune_navn().trim().equalsIgnoreCase(kommunenavn.trim())) {
                 messages.add(feature);
             }
@@ -62,7 +65,7 @@ public class StednavneJSONParser {
 
     public Feature readFeature(JsonReader reader) throws IOException {
         String name;
-        Feature feature = new Feature(null, null, null);
+        Feature feature = new Feature();
 
         reader.beginObject();
 

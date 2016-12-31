@@ -10,6 +10,9 @@ public class Feature {
     private String kommune_navn;
     private String stednavn;
 
+    public Feature() {
+    }
+
     public Feature(String kategori, String kommune_navn, String stednavn) {
         this.kategori = kategori;
         this.kommune_navn = kommune_navn;
