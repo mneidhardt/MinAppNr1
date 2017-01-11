@@ -22,6 +22,7 @@ import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Collections;
 import java.util.List;
 
 public class DisplaySearchresult extends AppCompatActivity {
@@ -106,6 +107,7 @@ public class DisplaySearchresult extends AppCompatActivity {
         try {
             stream = downloadUrl(urlString);
             features = stjsonParser.readJsonStream(stream, this.kommunenavn);
+            Collections.sort(features);
             // Makes sure that the InputStream is closed after the app is
             // finished using it.
         } finally {
