@@ -7,4 +7,5 @@
     <string name="settings">Konfig</string>
     <string name="stednavn_login">BrugerID</string>
     <string name="stednavn_password">Password</string>
+    <string name="stednavn_coordsys">Koordinatsystem</string>
 </resources>

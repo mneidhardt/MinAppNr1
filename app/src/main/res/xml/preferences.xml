@@ -4,9 +4,14 @@
     android:key="stednavn_login"
     android:title="@string/stednavn_login"
     android:defaultValue="" />
-<EditTextPreference
-    android:key="stednavn_password"
-    android:title="@string/stednavn_password"
-    android:defaultValue=""
-    android:inputType="textPassword" />
+    <EditTextPreference
+        android:key="stednavn_password"
+        android:title="@string/stednavn_password"
+        android:defaultValue=""
+        android:inputType="textPassword" />
+    <EditTextPreference
+        android:key="stednavn_coordsys"
+        android:title="@string/stednavn_coordsys"
+        android:defaultValue="epsg:4326"
+        android:inputType="text" />
 </PreferenceScreen>

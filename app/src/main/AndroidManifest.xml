@@ -19,7 +19,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".DisplaySearchresult"></activity>
+        <activity android:name=".DisplaySearchResultOnMap"></activity>
         <activity android:name=".SettingsActivity" android:theme="@style/AppTheme"></activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAIEh_WZTO8SO4YLDmVLNiDFG50XZ8TSkI" />
+
     </application>
 
 </manifest>

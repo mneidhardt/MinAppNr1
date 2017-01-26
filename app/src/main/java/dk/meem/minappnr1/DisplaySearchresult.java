@@ -42,13 +42,15 @@ public class DisplaySearchresult extends AppCompatActivity {
         this.kommunenavn = intent.getStringExtra(MainActivity.KOMMUNENAVN);
         String login = intent.getStringExtra(MainActivity.LOGIN);
         String password = intent.getStringExtra(MainActivity.PASSWORD);
+        String coordsys = intent.getStringExtra(MainActivity.COORDSYS);
 
         if (haveNetwork()) {
             String URL = baseURL +
                     "&hits="     + maxhits +
                     "&stednavn=" + stednavn +
                     "&login=" + login +
-                    "&password=" + password;
+                    "&password=" + password +
+                    "&outgeoref=" + coordsys;
 
             new DownloadXmlTask().execute(URL);
         } else {
@@ -119,12 +121,13 @@ public class DisplaySearchresult extends AppCompatActivity {
         StringBuilder htmlString = new StringBuilder();
         htmlString.append("<h3>Stednavne fra Kortforsyningen</h3>");
         htmlString.append("<em>Hentede " + features.size() + " resultater. " + formatter.format(rightNow.getTime()) + "</em>");
-        htmlString.append("<p/>" + "<table><tr><td><b>Stednavn</b></td><td><b>Kategori</b></td><td><b>Kommune</b></td></tr>");
+        htmlString.append("<p/>" + "<table><tr><td><b>Stednavn</b></td><td><b>Kategori</b></td><td><b>Kommune</b></td><td>BBox</td></tr>");
         for (Feature feature : features) {
             htmlString.append("<tr>" +
                     "<td>" + feature.getStednavn() + "</td>" +
                     "<td>" + feature.getKategori() + "</td>" +
                     "<td>" + feature.getKommune_navn() + "</td>" +
+                    "<td>" + feature.bboxAsString() + "</td>" +
                     "</tr>");
 
         }

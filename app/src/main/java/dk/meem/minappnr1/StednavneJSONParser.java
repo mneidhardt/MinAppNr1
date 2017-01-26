@@ -74,6 +74,8 @@ public class StednavneJSONParser {
 
             if (name.equals("properties")) {
                 feature = readProperties(reader);
+            } else if (name.equals("bbox") && reader.peek() != JsonToken.NULL) {
+                feature.setBbox(readDoublesArray(reader));
             } else {
                 reader.skipValue();
             }
@@ -120,6 +122,17 @@ public class StednavneJSONParser {
         reader.endArray();
 
         return stednavne;
+    }
+
+    public List<Double> readDoublesArray(JsonReader reader) throws IOException {
+        List<Double> doubles = new ArrayList<Double>();
+
+        reader.beginArray();
+        while (reader.hasNext()) {
+            doubles.add(reader.nextDouble());
+        }
+        reader.endArray();
+        return doubles;
     }
 
     public String readStednavn(JsonReader reader) throws IOException {

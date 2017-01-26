@@ -1,17 +1,14 @@
 package dk.meem.minappnr1;
 
 import java.util.Comparator;
-
-/**
- * Created by mine on 18/12/2016.
- */
-
+import java.util.List;
 
 class Feature implements Comparable<Feature> {
 //public class Feature {
     private String kategori;
     private String kommune_navn;
     private String stednavn;
+    private List<Double> bbox; // This is the bounding box of this feature.
 
     Feature() {
     }
@@ -34,6 +31,24 @@ class Feature implements Comparable<Feature> {
         return stednavn;
     }
 
+    public List<Double> getBbox() {
+        return bbox;
+    }
+
+    public String bboxAsString() {
+        String res="[";
+
+        for (double d : bbox) {
+            res += d + ", ";
+        }
+
+        return res + "]";
+    }
+
+    public void setBbox(List<Double> bbox) {
+        this.bbox = bbox;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -41,17 +56,22 @@ class Feature implements Comparable<Feature> {
 
         Feature feature = (Feature) o;
 
-        if (!kategori.equals(feature.kategori)) return false;
-        if (!kommune_navn.equals(feature.kommune_navn)) return false;
-        return stednavn.equals(feature.stednavn);
+        if (kategori != null ? !kategori.equals(feature.kategori) : feature.kategori != null)
+            return false;
+        if (kommune_navn != null ? !kommune_navn.equals(feature.kommune_navn) : feature.kommune_navn != null)
+            return false;
+        if (stednavn != null ? !stednavn.equals(feature.stednavn) : feature.stednavn != null)
+            return false;
+        return bbox != null ? bbox.equals(feature.bbox) : feature.bbox == null;
 
     }
 
     @Override
     public int hashCode() {
-        int result = kategori.hashCode();
-        result = 31 * result + kommune_navn.hashCode();
-        result = 31 * result + stednavn.hashCode();
+        int result = kategori != null ? kategori.hashCode() : 0;
+        result = 31 * result + (kommune_navn != null ? kommune_navn.hashCode() : 0);
+        result = 31 * result + (stednavn != null ? stednavn.hashCode() : 0);
+        result = 31 * result + (bbox != null ? bbox.hashCode() : 0);
         return result;
     }
 
